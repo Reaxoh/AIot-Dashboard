@@ -33,4 +33,5 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     createBatteryChart('pieChart1', 70);- 
     createBatteryChart('pieChart2', 50); 
+    createBatteryLineChart('lineChart1', [70, 60, 50, 40, 30, 20, 10]);
 });

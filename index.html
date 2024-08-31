@@ -49,7 +49,7 @@
             </div>
             
             <div class="flex-grow-1 d-flex flex-column">
-                <header class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <header class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top border-bottom">
                     <div>
                         <button id="toggleButton" class="btn"><i class="bi fs-3 bi-distribute-vertical"></i></button>
                     </div>
@@ -59,34 +59,33 @@
                         <i class="bi bi-gear fs-3 px-2"></i>
                         <i class="bi bi-sun fs-3 px-2" id="theme-toggle"></i>
                     </div>
-                    
                 </header>
 
-                <div id="content" class="flex-grow-1">
-                    <div class="container-fluid px-4 text-center mt-3">
+                <div id="content" class="flex-grow-1 align-items-center">
+                    <div class="container-fluid text-center mt-3">
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <div class="row justify-content-center">
                                     <div class="col-md-6 col-sm-8">
                                         <div class="card m-3">
                                             <div class="card-body">
-                                                <h5 class="text-muted mt-0" title="Number of Orders">Orders</h5>
-                                                <h3 class="mt-3 mb-3">5,543</h3>
+                                                <h5 class="text-muted mt-0" title="Energy Consumption">電量消耗 (6月)</h5>
+                                                <h3 class="mt-3 mb-3">150 kWh</h3>
                                                 <p class="mb-0 text-muted">
                                                     <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 1.08%</span>
-                                                    <span class="text-nowrap">Since last month</span>
+                                                    <span class="text-nowrap">自5月以來</span>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-8">
+                                    <div class="col-md-6 col-sm-8 mx-0">
                                         <div class="card m-3">
                                             <div class="card-body">
-                                                <h5 class="text-muted mt-0" title="Number of Orders">Orders</h5>
-                                                <h3 class="mt-3 mb-3">5,543</h3>
+                                                <h5 class="text-muted mt-0" title="Energy Consumption">電量消耗 (5月)</h5>
+                                                <h3 class="mt-3 mb-3">200 kWh</h3>
                                                 <p class="mb-0 text-muted">
-                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-down-bold"></i> 45.08%</span>
-                                                    <span class="text-nowrap">Since last month</span>
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 45.08%</span>
+                                                    <span class="text-nowrap">自4月以來</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -94,11 +93,11 @@
                                     <div class="col-md-6 col-sm-8">
                                         <div class="card m-3">
                                             <div class="card-body">
-                                                <h5 class="text-muted mt-0" title="Number of Orders">Orders</h5>
-                                                <h3 class="mt-3 mb-3">5,543</h3>
+                                                <h5 class="text-muted mt-0" title="Energy Consumption">電量消耗 (4月)</h5>
+                                                <h3 class="mt-3 mb-3">100 kWh</h3>
                                                 <p class="mb-0 text-muted">
                                                     <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 1.08%</span>
-                                                    <span class="text-nowrap">Since last month</span>
+                                                    <span class="text-nowrap">自3月以來</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -106,31 +105,31 @@
                                     <div class="col-md-6 col-sm-8">
                                         <div class="card m-3">
                                             <div class="card-body">
-                                                <h5 class="text-muted mt-0" title="Number of Orders">Orders</h5>
-                                                <h3 class="mt-3 mb-3">5,543</h3>
+                                                <h5 class="text-muted mt-0" title="Energy Consumption">電量消耗 (3月)</h5>
+                                                <h3 class="mt-3 mb-3">250 kWh</h3>
                                                 <p class="mb-0 text-muted">
                                                     <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 1.08%</span>
-                                                    <span class="text-nowrap">Since last month</span>
+                                                    <span class="text-nowrap">自2月以來</span>
                                                 </p>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>                                
                             </div>
                             <div class="col-md-6 d-flex">
                                 <div class="row justify-content-center flex-fill">
-                                    <div class="col-md-6 col-sm-8">
-                                        <div class="card m-3">
-                                            <div class="card-body">
-                                                <div><h3>電視</h3></div>
+                                    <div class="col-md-6 col-sm-8 d-flex">
+                                        <div class="card m-3 flex-fill">
+                                            <div class="fs-3">手機</div>
+                                            <div class="card-body  d-flex justify-content-center align-items-center">
                                                 <canvas id="pieChart1"></canvas>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-8">
-                                        <div class="card m-3">
-                                            <div class="card-body">
-                                                <div><h3>冷氣</h3></div>
+                                    <div class="col-md-6 col-sm-8 d-flex">
+                                        <div class="card m-3 flex-fill ">
+                                            <div class="fs-3">電腦</div>
+                                            <div class="card-body d-flex justify-content-center align-items-center">
                                                 <canvas id="pieChart2"></canvas>
                                             </div>
                                         </div>
@@ -140,11 +139,118 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-3">
-                                
+                            <div class="col-md-7">
+                                <div class="card m-3">
+                                    <div class="d-flex card-header justify-content-between align-items-center">
+                                        <h5 class="pt-2">7月最高用電產品排名</h5>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light">匯出 <i class="mdi mdi-download ms-1"></i></a>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div class="table-responsive">
+                                            <table class="table table-nowrap table-hover mb-1">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">電視</h5>
+                                                            <span class="text-muted font-13">2023年7月1日-7月31日</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">150 kWh</h5>
+                                                            <span class="text-muted font-13">日最高用電量</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">30%</h5>
+                                                            <span class="text-muted font-13">佔比</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">500 kWh</h5>
+                                                            <span class="text-muted font-13">總用電量</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">冷氣</h5>
+                                                            <span class="text-muted font-13">2023年7月1日-7月31日</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">200 kWh</h5>
+                                                            <span class="text-muted font-13">日最高用電量</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">30%</h5>
+                                                            <span class="text-muted font-13">佔比</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">400 kWh</h5>
+                                                            <span class="text-muted font-13">總用電量</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">冰箱</h5>
+                                                            <span class="text-muted font-13">2023年7月1日-7月31日</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">100 kWh</h5>
+                                                            <span class="text-muted font-13">日最高用電量</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">20%</h5>
+                                                            <span class="text-muted font-13">佔比</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">300 kWh</h5>
+                                                            <span class="text-muted font-13">總用電量</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">洗衣機</h5>
+                                                            <span class="text-muted font-13">2023年7月1日-7月31日</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">50 kWh</h5>
+                                                            <span class="text-muted font-13">日最高用電量</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">10%</h5>
+                                                            <span class="text-muted font-13">佔比</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">150 kWh</h5>
+                                                            <span class="text-muted font-13">總用電量</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">燈具</h5>
+                                                            <span class="text-muted font-13">2023年7月1日-7月31日</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">50 kWh</h5>
+                                                            <span class="text-muted font-13">日最高用電量</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">10%</h5>
+                                                            <span class="text-muted font-13">佔比</span>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-14 my-1 fw-normal">150 kWh</h5>
+                                                            <span class="text-muted font-13">總用電量</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-9">
-
+                            <div class="col-md-5 d-flex">
+                                <div class="card m-3 flex-fill ">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <canvas id="lineChart1"></canvas>
+                                    </div>
+                                </div>    
                             </div>
                         </div>
                     </div>
