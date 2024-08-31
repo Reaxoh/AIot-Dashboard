@@ -15,12 +15,27 @@ main {
 }
 
 .sidebar {
-    transition: width 0.55s;
+    position: fixed;
+    width: 70px;
+    height: 100%;
+    z-index: 100;
+    transition: width 0.15s;
     background-color: #3C3C3C;
+}
+
+#main-content {
+    margin-left: 70px; 
+    width: calc(100% - 70px);
+    transition: margin-left 0.15s, width 0.15s;
 }
 
 .sidebar.expanded {
     width: 200px;
+}
+
+#main-content.expanded {
+    margin-left: 200px;
+    width: calc(100% - 200px);
 }
 
 .sidebar .text {
@@ -49,15 +64,23 @@ canvas {
         display: none;
     }
 
-    #toggleButton {
+    #sidebar.show {
         display: block;
+        width: 70px;
+    }
+
+    #main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    #main-content.show {
+        margin-left: 70px;
+        width: calc(100% - 200px);
     }
 }
-
-
 
 canvas {
     width: auto;
     height: auto;
 }
-

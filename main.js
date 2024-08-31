@@ -1,6 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('toggleButton').addEventListener('click', function() {
-        document.getElementById('sidebar').classList.toggle('expanded');
+        var sidebar = document.getElementById('sidebar');
+        var mainContent = document.getElementById('main-content');
+        
+        if (window.innerWidth <= 768) {
+            sidebar.classList.toggle('show');
+            mainContent.classList.toggle('show');
+        } else {
+            sidebar.classList.toggle('expanded');
+            mainContent.classList.toggle('expanded');
+        }
     });
 });
 
